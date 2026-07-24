@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NTX Dynamics | Engineer. Innovate. Elevate.</title>
+  <meta name="description" content="NTX Dynamics - Leading provider of industrial engineering, calibration and measurement equipment supply, AI automation, and advanced tech dynamics." />
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Michroma&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="light-theme">
+
+  <!-- TOP NOTCHED HEADER NAVIGATION -->
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <nav class="nav-group nav-left">
+        <a href="#home" class="nav-link active" data-i18n="nav_home">HOME</a>
+        <a href="#about" class="nav-link" data-i18n="nav_about">ABOUT US</a>
+        <a href="#solutions" class="nav-link" data-i18n="nav_solutions">SOLUTIONS</a>
+        <a href="#projects" class="nav-link" data-i18n="nav_projects">PROJECTS</a>
+      </nav>
+
+      <div class="notch-center-container">
+        <div class="notch-frame">
+          <a href="#home" class="notch-logo-link" title="NTX Dynamics">
+            <img src="logo-light.svg" alt="NTX Dynamics Logo" id="header-logo" class="header-logo" />
+          </a>
+        </div>
+      </div>
+
+      <nav class="nav-group nav-right">
+        <a href="profile.html" class="nav-link" data-i18n="nav_profile">PROFILE</a>
+        <a href="#contacts" class="nav-link" data-i18n="nav_contacts">CONTACTS</a>
+        <a href="#careers" class="nav-link" data-i18n="nav_careers">CAREERS</a>
+        
+        <!-- LANGUAGE SWITCHER -->
+        <button id="lang-toggle" class="lang-toggle-btn" title="Switch Language / Chọn ngôn ngữ">
+          <svg class="globe-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="2" y1="12" x2="22" y2="12"></line>
+            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+          </svg>
+          <div class="lang-text-stack">
+            <span class="lang-en active">EN</span>
+            <span class="lang-vi">VI</span>
+          </div>
+        </button>
+
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle light/dark mode">
+          <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
+          <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </nav>
+    </div>
+
+    <!-- HEADER NOTCH BORDER LINE (45° SLOPES, ROUNDED CORNERS, FADED EDGES) -->
+    <div class="header-notch-line-wrapper">
+      <div class="notch-line-left"></div>
+      <svg class="header-notch-svg" viewBox="0 0 360 36">
+        <path class="header-notch-fill" d="M 0,0 L 360,0 L 360,2 Q 344,2 336,10 L 320,26 Q 312,34 296,34 L 64,34 Q 48,34 40,26 L 24,10 Q 16,2 0,2 Z" />
+        <path class="header-notch-path" d="M 0,2 Q 16,2 24,10 L 40,26 Q 48,34 64,34 L 296,34 Q 312,34 320,26 L 336,10 Q 344,2 360,2" />
+      </svg>
+      <div class="notch-line-right"></div>
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+    <div class="mobile-drawer-header">
+      <img src="logo-light.svg" alt="NTX Dynamics Logo" class="mobile-logo" id="mobile-logo" />
+      <button class="mobile-close-btn" id="mobile-close-btn">&times;</button>
+    </div>
+    <ul class="mobile-nav-links">
+      <li><a href="#home" class="mobile-link active" data-i18n="nav_home">HOME</a></li>
+      <li><a href="#about" class="mobile-link" data-i18n="nav_about">ABOUT US</a></li>
+      <li><a href="#solutions" class="mobile-link" data-i18n="nav_solutions">SOLUTIONS</a></li>
+      <li><a href="#projects" class="mobile-link" data-i18n="nav_projects">PROJECTS</a></li>
+      <li><a href="profile.html" class="mobile-link" data-i18n="nav_profile">PROFILE</a></li>
+      <li><a href="#contacts" class="mobile-link" data-i18n="nav_contacts">CONTACTS</a></li>
+      <li><a href="#careers" class="mobile-link" data-i18n="nav_careers">CAREERS</a></li>
+    </ul>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main>
+    <!-- HERO SECTION -->
+    <section id="home" class="hero-section">
+      <div class="hero-bg-grid"></div>
+      <div class="hero-glow"></div>
+      <div class="container hero-container">
+        <h1 class="hero-title" data-i18n="hero_title">Pioneering High-Performance <span class="accent-text">Dynamics & Technology</span></h1>
+        <p class="hero-subtitle" data-i18n="hero_subtitle">
+          NTX Dynamics delivers state-of-the-art engineering solutions, industrial automation, industrial calibration & supply, and custom robotics built for high reliability and scale.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#solutions" class="btn btn-primary" data-i18n="btn_explore">Explore Solutions</a>
+          <a href="#contacts" class="btn btn-outline" data-i18n="btn_contact">Contact Us</a>
+        </div>
+
+        <!-- METRICS COUNTER BAR -->
+        <div class="metrics-grid">
+          <div class="metric-card">
+            <div class="metric-number" data-target="150">0</div>
+            <div class="metric-label" data-i18n="metric_projects">Accumulated Projects</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number" data-target="99.9">0</div>
+            <div class="metric-label" data-i18n="metric_reliability">% System Reliability</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number" data-target="5">0</div>
+            <div class="metric-label" data-i18n="metric_engineers">Core Engineers (8-10 Yrs Exp)</div>
+          </div>
+          <div class="metric-card">
+            <div class="metric-number" data-target="24" data-suffix="/7">0</div>
+            <div class="metric-label" data-i18n="metric_monitoring">Real-time Monitoring</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT US SECTION -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tag_about">ABOUT US</span>
+          <h2 class="section-title" data-i18n="title_about">NTX DYNAMICS ENGINEERING &amp; TECHNOLOGIES CO., LTD.</h2>
+          <p class="section-desc" data-i18n="desc_about">Pioneering high-performance engineering solutions and smart industrial automation.</p>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
+            </div>
+            <h3 data-i18n="about_card1_title">Core Expertise</h3>
+            <p data-i18n="about_card1_desc">A team of 5 core engineers with 8-10 years of R&D and field experience, delivering designs with outstanding technical depth.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline></svg>
+            </div>
+            <h3 data-i18n="about_card2_title">150+ Accumulated Projects</h3>
+            <p data-i18n="about_card2_desc">Rich experience accumulated over 150+ high-tech projects for international partners and FDI enterprises.</p>
+          </div>
+
+          <div class="about-card">
+            <div class="about-icon">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+            </div>
+            <h3 data-i18n="about_card3_title">International Recognition</h3>
+            <p data-i18n="about_card3_desc">Global-standard solutions, featuring prominent projects that have been covered by major international news networks like <strong>ABC News</strong> and <strong>Fox News</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SOLUTIONS SECTION -->
+    <section id="solutions" class="solutions-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tag_solutions">OUR SOLUTIONS</span>
+          <h2 class="section-title" data-i18n="title_solutions">Areas of Expertise</h2>
+          <p class="section-desc" data-i18n="desc_solutions">Providing comprehensive software, hardware, and smart infrastructure solutions.</p>
+        </div>
+
+        <div class="solutions-grid">
+          <div class="solution-card">
+            <div class="solution-badge">01</div>
+            <h3 data-i18n="sol1_title">Calibration &amp; Measurement</h3>
+            <p data-i18n="sol1_desc">Providing complete laboratory measurement instruments, environmental pollution analysis equipment, and high-precision industrial calibration services.</p>
+            <ul class="solution-list">
+              <li data-i18n="sol1_li1">Pollution monitoring instruments (noise, light, PM2.5...)</li>
+              <li data-i18n="sol1_li2">Lab &amp; electrical testing equipment (oscilloscopes, power meters...)</li>
+              <li data-i18n="sol1_li3">Industrial sensor &amp; instrument calibration services</li>
+            </ul>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-badge">02</div>
+            <h3 data-i18n="sol2_title">Automation &amp; Robotics</h3>
+            <p data-i18n="sol2_desc">Integrating and programming diverse industrial robots (Cobots, heavy-duty robots, Delta...) alongside advanced PLC/DCS control panel solutions.</p>
+            <ul class="solution-list">
+              <li data-i18n="sol2_li1">Industrial robot programming (ABB, KUKA, Universal Robots, JAKA...)</li>
+              <li data-i18n="sol2_li2">Integration of Mini Cobots, heavy-duty &amp; high-speed Delta robots</li>
+              <li data-i18n="sol2_li3">Control panel design &amp; expert PLC/DCS programming</li>
+            </ul>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-badge">03</div>
+            <h3 data-i18n="sol3_title">AI &amp; Computer Vision</h3>
+            <p data-i18n="sol3_desc">Applying advanced AI image processing for visual inspection, surface defect detection, and automated KCS/QC quality control processes.</p>
+            <ul class="solution-list">
+              <li data-i18n="sol3_li1">Automated Visual Inspection (AVI) system development</li>
+              <li data-i18n="sol3_li2">Surface defect detection &amp; product classification</li>
+              <li data-i18n="sol3_li3">Real-time AI camera integration into production lines</li>
+            </ul>
+          </div>
+
+          <div class="solution-card">
+            <div class="solution-badge">04</div>
+            <h3 data-i18n="sol4_title">Custom Hardware Development</h3>
+            <p data-i18n="sol4_desc">R&amp;D and manufacturing of custom embedded boards, optimized firmware, and industrial protective enclosures rating up to IP68.</p>
+            <ul class="solution-list">
+              <li data-i18n="sol4_li1">High-speed PCB design &amp; Embedded Firmware development</li>
+              <li data-i18n="sol4_li2">Structural &amp; fluid dynamics simulations (CAD/CAE)</li>
+              <li data-i18n="sol4_li3">Environmental durability &amp; stress testing</li>
+            </ul>
+          </div>
+
+          <div class="solution-card full-width">
+            <div class="solution-badge">05</div>
+            <h3 data-i18n="sol5_title">Global Sourcing &amp; Procurement</h3>
+            <p data-i18n="sol5_desc">Expertise in negotiating, sourcing, and directly importing electronic, hardware, and mechanical components from global OEMs at optimized costs.</p>
+            <ul class="solution-list">
+              <li data-i18n="sol5_li1">Sourcing hard-to-find, obsolete, and specialized parts</li>
+              <li data-i18n="sol5_li2">Official import brokerage &amp; BOM cost optimization</li>
+              <li data-i18n="sol5_li3">Reliable supplier network in the US, Europe, Japan, and China</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tag_projects">FEATURED PROJECTS</span>
+          <h2 class="section-title" data-i18n="title_projects">Real-world Achievements</h2>
+          <p class="section-desc" data-i18n="desc_projects">Actual experience accumulated through prominent projects directly undertaken by our founding engineer team.</p>
+        </div>
+
+        <!-- Filter Controls -->
+        <div class="project-filters">
+          <button class="filter-btn active" data-filter="all" data-i18n="filter_all">All</button>
+          <button class="filter-btn" data-filter="calibration" data-i18n="filter_calibration">Calibration &amp; Measurement</button>
+          <button class="filter-btn" data-filter="automation" data-i18n="filter_automation">Automation</button>
+          <button class="filter-btn" data-filter="machinery" data-i18n="filter_machinery">Machinery</button>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-card" data-category="calibration">
+            <div class="project-img-box">
+              <div class="project-img-placeholder calib-bg">
+                <span>NTX-CALIB-01</span>
+              </div>
+              <span class="project-category" data-i18n="filter_calibration">Calibration &amp; Measurement</span>
+            </div>
+            <div class="project-content">
+              <h3 data-i18n="proj1_title">Lab Equipment Calibration for FDI Factory</h3>
+              <p data-i18n="proj1_desc">Comprehensive supply and periodic calibration of oscilloscopes, multimeters, power meters, and industrial pollution measurement instruments.</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="automation">
+            <div class="project-img-box">
+              <div class="project-img-placeholder auto-bg">
+                <span>NTX-ROBOTICS</span>
+              </div>
+              <span class="project-category" data-i18n="filter_automation">Automation</span>
+            </div>
+            <div class="project-content">
+              <h3 data-i18n="proj2_title">Multi-brand Industrial Robot Integration</h3>
+              <p data-i18n="proj2_desc">Programming and integrating Mini Cobots, heavy-duty robots, and Delta robots from ABB, KUKA, Universal Robots, JAKA, etc., to optimize factory production lines.</p>
+            </div>
+          </div>
+
+          <div class="project-card" data-category="machinery">
+            <div class="project-img-box">
+              <div class="project-img-placeholder machine-bg">
+                <span>NTX-USA-CUSTOM</span>
+              </div>
+              <span class="project-category" data-i18n="filter_machinery">Machinery</span>
+            </div>
+            <div class="project-content">
+              <h3 data-i18n="proj3_title">Custom Automated Machinery for US Market</h3>
+              <p data-i18n="proj3_desc">Mechanical design and custom manufacturing successfully delivered to a client in the US. Operating stably for years and covered by ABC News and Fox News.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CAREERS SECTION -->
+    <section id="careers" class="careers-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tag_careers">CAREERS</span>
+          <h2 class="section-title" data-i18n="title_careers">Join NTX Dynamics</h2>
+          <p class="section-desc" data-i18n="desc_careers">Shape the future of technology and build an outstanding career with us.</p>
+        </div>
+
+        <div class="jobs-list">
+          <div class="job-card">
+            <div class="job-info">
+              <h3 data-i18n="job1_title">Senior Embedded Hardware &amp; Firmware Engineer</h3>
+              <div class="job-meta">
+                <span data-i18n="job1_city">📍 Ho Chi Minh City</span>
+                <span data-i18n="job1_type">⏱ Full-time</span>
+                <span data-i18n="job1_salary">💰 Competitive Salary</span>
+              </div>
+            </div>
+            <button class="btn btn-outline apply-btn" data-job="Senior Embedded Engineer" data-i18n="btn_apply">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <div class="job-info">
+              <h3 data-i18n="job2_title">PLC / SCADA Automation Engineer</h3>
+              <div class="job-meta">
+                <span data-i18n="job2_city">📍 Ho Chi Minh City</span>
+                <span data-i18n="job2_type">⏱ Full-time</span>
+                <span data-i18n="job2_salary">💰 Competitive Salary</span>
+              </div>
+            </div>
+            <button class="btn btn-outline apply-btn" data-job="PLC/SCADA Automation Engineer" data-i18n="btn_apply">Apply Now</button>
+          </div>
+
+          <div class="job-card">
+            <div class="job-info">
+              <h3 data-i18n="job3_title">Sales Engineer - Measurement &amp; Calibration Equipment</h3>
+              <div class="job-meta">
+                <span data-i18n="job3_city">📍 Ho Chi Minh City</span>
+                <span data-i18n="job3_type">⏱ Full-time</span>
+                <span data-i18n="job3_salary">💰 Base Salary + Attractive Commission</span>
+              </div>
+            </div>
+            <button class="btn btn-outline apply-btn" data-job="Sales Engineer - Calibration" data-i18n="btn_apply">Apply Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTS SECTION -->
+    <section id="contacts" class="contacts-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag" data-i18n="tag_contacts">CONTACT US</span>
+          <h2 class="section-title" data-i18n="title_contacts">Get in Touch with NTX Dynamics</h2>
+          <p class="section-desc" data-i18n="desc_contacts">Submit your inquiry to receive expert consultation and detailed quotes.</p>
+        </div>
+
+        <div class="contacts-grid">
+          <div class="contact-info-card">
+            <h3 data-i18n="contacts_hq">Headquarters</h3>
+            <p class="contact-sub" data-i18n="contacts_sub">We are always ready to listen and collaborate with our clients.</p>
+
+            <div class="info-item">
+              <div class="info-icon">📍</div>
+              <div>
+                <strong data-i18n="contacts_address_label">Address:</strong>
+                <p data-i18n="contacts_address">105 La Xuan Oai, Quarter 2, Tang Nhon Phu Ward, Ho Chi Minh City, Vietnam</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">✉️</div>
+              <div>
+                <strong data-i18n="contacts_email_label">Email:</strong>
+                <p>info@ntxdynamics.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">📞</div>
+              <div>
+                <strong data-i18n="contacts_hotline_label">Hotline:</strong>
+                <p>+84 329207097</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <div class="info-icon">⏰</div>
+              <div>
+                <strong data-i18n="contacts_hours_label">Office Hours:</strong>
+                <p data-i18n="contacts_hours">Monday - Friday: 08:00 - 17:30</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-card">
+            <form id="contact-form" class="contact-form">
+              <div class="form-group">
+                <label for="name" data-i18n="form_name">Full Name *</label>
+                <input type="text" id="name" required placeholder="John Doe" data-i18n="form_name_ph" />
+              </div>
+
+              <div class="form-group">
+                <label for="email" data-i18n="form_email">Email Address *</label>
+                <input type="email" id="email" required placeholder="example@company.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="subject" data-i18n="form_subject">Subject *</label>
+                <input type="text" id="subject" required placeholder="Measurement &amp; calibration equipment / Automation inquiry" data-i18n="form_subject_ph" />
+              </div>
+
+              <div class="form-group">
+                <label for="message" data-i18n="form_message">Message *</label>
+                <textarea id="message" rows="5" required placeholder="Describe your project requirements or questions..." data-i18n="form_message_ph"></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn" data-i18n="btn_send">Send Message</button>
+              <div id="form-response" class="form-response"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-brand">
+        <img src="logo-light.svg" alt="NTX Dynamics Logo" class="footer-logo" id="footer-logo" />
+      </div>
+
+      <div class="footer-links">
+        <a href="#home">HOME</a>
+        <a href="#about">ABOUT US</a>
+        <a href="#solutions">SOLUTIONS</a>
+        <a href="#projects">PROJECTS</a>
+        <a href="#careers">CAREERS</a>
+        <a href="#contacts">CONTACTS</a>
+      </div>
+
+      <div class="footer-copy" data-i18n="footer_copy">
+        &copy; 2026 NTX DYNAMICS ENGINEERING &amp; TECHNOLOGIES CO., LTD. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <!-- APPLICATION MODAL -->
+  <div class="modal-backdrop" id="job-modal">
+    <div class="modal-box">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <h3 class="modal-title" data-i18n="modal_title">Apply for <span id="modal-job-title" class="accent-text"></span></h3>
+      <p class="modal-sub" data-i18n="modal_sub">Please fill out the form below to submit your application directly to NTX Dynamics HR.</p>
+      
+      <form id="job-form" class="modal-form">
+        <div class="form-group">
+          <label data-i18n="modal_name">Full Name *</label>
+          <input type="text" required placeholder="Enter your full name" data-i18n="modal_name_ph" />
+        </div>
+        <div class="form-group">
+          <label data-i18n="modal_phone">Phone Number *</label>
+          <input type="tel" required placeholder="0901234567" />
+        </div>
+        <div class="form-group">
+          <label data-i18n="modal_email">Email Address *</label>
+          <input type="email" required placeholder="email@example.com" />
+        </div>
+        <div class="form-group">
+          <label data-i18n="modal_cv">CV / LinkedIn Link (optional)</label>
+          <input type="url" placeholder="https://linkedin.com/in/..." />
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-i18n="btn_submit_app">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
