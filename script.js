@@ -27,7 +27,7 @@ const translations = {
     desc_about: 'Pioneering high-performance engineering solutions and smart industrial automation.',
     
     about_card1_title: 'Core Expertise',
-    about_card1_desc: 'A team of 5 core engineers with 8-10 years of R&D and field experience, delivering designs with outstanding technical depth.',
+    about_card1_desc: 'A team of 4 core engineers with 8-10 years of R&D and field experience, delivering designs with outstanding technical depth.',
     about_card2_title: '150+ Accumulated Projects',
     about_card2_desc: 'Rich experience accumulated over 150+ high-tech projects for international partners and FDI enterprises.',
     about_card3_title: 'International Recognition',
@@ -37,11 +37,11 @@ const translations = {
     title_solutions: 'Areas of Expertise',
     desc_solutions: 'Providing comprehensive software, hardware, and smart infrastructure solutions.',
     
-    sol1_title: 'Calibration &amp; Measurement',
-    sol1_desc: 'Providing complete laboratory measurement instruments, environmental pollution analysis equipment, and high-precision industrial calibration services.',
-    sol1_li1: 'Pollution monitoring instruments (noise, light, PM2.5...)',
-    sol1_li2: 'Lab &amp; electrical testing equipment (oscilloscopes, power meters...)',
-    sol1_li3: 'Industrial sensor &amp; instrument calibration services',
+    sol1_title: 'Renewable Energy &amp; Solar Systems',
+    sol1_desc: 'Providing expert capacity calculation, layout optimization, and installation services for high-yield solar energy and battery systems.',
+    sol1_li1: 'Solar capacity engineering &amp; layout planning',
+    sol1_li2: 'High-efficiency solar panels &amp; inverter installations',
+    sol1_li3: 'Energy storage systems (ESS) &amp; battery integration',
     
     sol2_title: 'Automation &amp; Robotics',
     sol2_desc: 'Integrating and programming diverse industrial robots (Cobots, heavy-duty robots, Delta...) alongside advanced PLC/DCS control panel solutions.',
@@ -72,12 +72,15 @@ const translations = {
     desc_projects: 'Actual experience accumulated through prominent projects directly undertaken by our founding engineer team.',
     
     filter_all: 'All',
-    filter_calibration: 'Calibration &amp; Measurement',
+    filter_safety: 'EV Safety Systems',
     filter_automation: 'Automation',
     filter_machinery: 'Machinery',
+    filter_energy: 'Renewable Energy',
     
-    proj1_title: 'Lab Equipment Calibration for FDI Factory',
-    proj1_desc: 'Comprehensive supply and periodic calibration of oscilloscopes, multimeters, power meters, and industrial pollution measurement instruments.',
+    proj1_title: 'Fireproof EV Charging &amp; Isolation Cabin',
+    proj1_desc: 'Deploying intelligent cabins with ultra-sensitive sensors, AI monitoring cameras, and external firefighting injection valves to isolate and contain lithium-ion/lead-acid battery fires.',
+    proj4_title: 'Rooftop Solar &amp; ESS Installation',
+    proj4_desc: 'Providing precise capacity engineering and structural layout design for residential and commercial solar installations.',
     proj2_title: 'Multi-brand Industrial Robot Integration',
     proj2_desc: 'Programming and integrating Mini Cobots, heavy-duty robots, and Delta robots from ABB, KUKA, Universal Robots, JAKA, etc., to optimize factory production lines.',
     proj3_title: 'Custom Automated Machinery for US Market',
@@ -97,10 +100,10 @@ const translations = {
     job2_type: '⏱ Full-time',
     job2_salary: '💰 Competitive Salary',
     
-    job3_title: 'Sales Engineer - Measurement &amp; Calibration Equipment',
+    job3_title: 'Mechanical &amp; Automation Technician (MAE)',
     job3_city: '📍 Ho Chi Minh City',
     job3_type: '⏱ Full-time',
-    job3_salary: '💰 Base Salary + Attractive Commission',
+    job3_salary: '💰 Competitive Salary',
     
     btn_apply: 'Apply Now',
     
@@ -147,7 +150,7 @@ const translations = {
     nav_profile: "NĂNG LỰC",
     
     hero_title: 'Tiên phong Giải pháp <span class="accent-text">Kỹ thuật &amp; Công nghệ</span> Hiệu năng cao',
-    hero_subtitle: 'NTX Dynamics cung cấp giải pháp kỹ thuật cơ điện tử tiên tiến, tự động hóa công nghiệp, cung ứng & hiệu chuẩn thiết bị công nghiệp, và robot tùy chỉnh độ tin cậy cao.',
+    hero_subtitle: 'NTX Dynamics cung cấp giải pháp kỹ thuật cơ điện tử tiên tiến, tự động hóa công nghiệp, điện năng lượng mặt trời và robot tùy chỉnh độ tin cậy cao.',
     btn_explore: 'Khám phá Giải pháp',
     btn_contact: 'Liên hệ Hợp tác',
     
@@ -161,7 +164,7 @@ const translations = {
     desc_about: 'Đơn vị tiên phong trong giải pháp kỹ thuật công nghệ cao và tự động hóa thông minh.',
     
     about_card1_title: 'Chuyên gia Cốt lõi',
-    about_card1_desc: 'Đội ngũ gồm 5 kỹ sư cốt lõi với 8-10 năm kinh nghiệm nghiên cứu & thực chiến, mang lại các thiết kế có chiều sâu kỹ thuật vượt trội.',
+    about_card1_desc: 'Đội ngũ gồm 4 kỹ sư cốt lõi với 8-10 năm kinh nghiệm nghiên cứu & thực chiến, mang lại các thiết kế có chiều sâu kỹ thuật vượt trội.',
     about_card2_title: '150+ Dự án Tích lũy',
     about_card2_desc: 'Bề dày kinh nghiệm phong phú tích lũy qua hơn 150+ dự án công nghệ cao cho đối tác quốc tế và các doanh nghiệp FDI.',
     about_card3_title: 'Tầm vóc Quốc tế',
@@ -171,11 +174,11 @@ const translations = {
     title_solutions: 'Lĩnh vực Chuyên môn',
     desc_solutions: 'Cung cấp toàn diện các giải pháp phần cứng, phần mềm và hạ tầng thông minh.',
     
-    sol1_title: 'Hiệu chuẩn &amp; Thiết bị Đo lường',
-    sol1_desc: 'Cung cấp trọn gói các thiết bị đo lường phòng Lab, thiết bị phân tích kiểm soát ô nhiễm và dịch vụ hiệu chuẩn công nghiệp chuẩn xác.',
-    sol1_li1: 'Thiết bị đo lường ô nhiễm (tiếng ồn, ánh sáng, bụi mịn...)',
-    sol1_li2: 'Thiết bị phòng Lab &amp; đo lường điện (Oscilloscope, đồng hồ điện...)',
-    sol1_li3: 'Dịch vụ hiệu chuẩn thiết bị đo lường công nghiệp',
+    sol1_title: 'Năng lượng Tái tạo &amp; Điện mặt trời',
+    sol1_desc: 'Cung cấp năng lượng tính toán công suất tối ưu, thiết kế bản vẽ lắp đặt hệ thống pin mặt trời và tích hợp hệ thống lưu trữ năng lượng (ESS) trọn gói.',
+    sol1_li1: 'Tính toán công suất &amp; quy hoạch bản vẽ lắp đặt pin mặt trời',
+    sol1_li2: 'Thiết kế thi công hệ thống pin mặt trời &amp; bộ hòa lưới',
+    sol1_li3: 'Tích hợp hệ thống lưu trữ năng lượng (ESS) &amp; quản lý pin',
     
     sol2_title: 'Tự động hóa &amp; Robotics',
     sol2_desc: 'Tích hợp, lập trình hệ thống robot công nghiệp đa dạng (Mini Cobot, robot hạng nặng, Delta...) từ các thương hiệu hàng đầu cùng giải pháp điều khiển PLC/DCS nâng cao.',
@@ -206,12 +209,15 @@ const translations = {
     desc_projects: 'Kinh nghiệm tích lũy thực tế qua các dự án tiêu biểu do đội ngũ kỹ sư sáng lập của chúng tôi trực tiếp đảm nhiệm.',
     
     filter_all: 'Tất cả',
-    filter_calibration: 'Hiệu chuẩn &amp; Đo lường',
+    filter_safety: 'Hệ thống An toàn xe điện',
     filter_automation: 'Tự động hóa',
     filter_machinery: 'Chế tạo Máy',
+    filter_energy: 'Năng lượng Tái tạo',
     
-    proj1_title: 'Hiệu chuẩn Thiết bị Phòng Thí nghiệm Nhà máy FDI',
-    proj1_desc: 'Cung cấp, hiệu chuẩn toàn diện các thiết bị Oscilloscope, đồng hồ đo điện và máy đo mức ô nhiễm công nghiệp.',
+    proj1_title: 'Khoang sạc cách ly và Cứu hỏa khẩn cấp xe điện',
+    proj1_desc: 'Triển khai cabin thông minh với hệ thống cảm biến siêu nhạy, camera AI giám sát và vòi phun cứu hỏa từ ngoài vào để cô lập hoàn toàn đám cháy pin Lithium-ion.',
+    proj4_title: 'Thi công Điện mặt trời &amp; Lưu trữ Năng lượng',
+    proj4_desc: 'Tính toán công suất tối ưu và thiết kế bố trí hệ thống pin năng lượng mặt trời áp mái cho hộ gia đình và doanh nghiệp.',
     proj2_title: 'Tích hợp Robot Công nghiệp Đa nhãn hiệu',
     proj2_desc: 'Lập trình tích hợp Mini Cobot, Robot tải nặng và Delta Robot từ các hãng ABB, KUKA, Universal Robots, JAKA... tối ưu hóa dây chuyền sản xuất nhà máy.',
     proj3_title: 'Hệ thống Máy Tự động chuyên dụng xuất khẩu Mỹ',
@@ -231,10 +237,10 @@ const translations = {
     job2_type: '⏱ Full-time',
     job2_salary: '💰 Lương thỏa thuận hấp dẫn',
     
-    job3_title: 'Kỹ sư Kinh doanh Thiết bị Đo lường &amp; Hiệu chuẩn',
+    job3_title: 'Kỹ thuật viên Cơ điện tử &amp; Tự động hóa (MAE)',
     job3_city: '📍 TP. Hồ Chí Minh',
     job3_type: '⏱ Full-time',
-    job3_salary: '💰 Lương &amp; Hoa hồng hấp dẫn',
+    job3_salary: '💰 Lương thỏa thuận hấp dẫn',
     
     btn_apply: 'Ứng tuyển ngay',
     

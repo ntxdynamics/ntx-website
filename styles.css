@@ -71,6 +71,7 @@ body.dark-theme {
 html {
   scroll-behavior: smooth;
   font-size: 16px;
+  overflow-x: hidden;
 }
 
 body {
@@ -354,20 +355,23 @@ body.dark-theme .moon-icon { display: block; }
 .mobile-nav-drawer {
   position: fixed;
   top: 0;
-  right: -320px;
+  right: 0;
+  transform: translateX(100%);
   width: 300px;
   height: 100vh;
   background: var(--bg-card);
   z-index: 1100;
   padding: 2rem;
   box-shadow: var(--shadow-lg);
-  transition: right var(--transition-normal);
+  transition: transform var(--transition-normal);
   display: flex;
   flex-direction: column;
+  visibility: hidden;
 }
 
 .mobile-nav-drawer.open {
-  right: 0;
+  transform: translateX(0);
+  visibility: visible;
 }
 
 .mobile-nav-overlay.open {
@@ -818,6 +822,7 @@ section {
 .calib-bg { background: linear-gradient(135deg, #0284c7, #0f172a); }
 .auto-bg { background: linear-gradient(135deg, #0d9488, #0f172a); }
 .machine-bg { background: linear-gradient(135deg, #f59e0b, #0f172a); }
+.energy-bg { background: linear-gradient(135deg, #f59e0b, #e11d48); }
 
 .project-category {
   position: absolute;
@@ -1167,6 +1172,7 @@ section {
   
   .header-inner {
     justify-content: space-between;
+    padding: 0 1rem;
   }
   
   .notch-center-container {
