@@ -280,7 +280,9 @@ document.addEventListener('DOMContentLoaded', () => {
   const sections = document.querySelectorAll('section');
   
   const themeToggleBtn = document.getElementById('theme-toggle');
+  const mobileThemeToggleBtn = document.getElementById('mobile-theme-toggle');
   const langToggleBtn = document.getElementById('lang-toggle');
+  const mobileLangToggleBtn = document.getElementById('mobile-lang-toggle');
   const headerLogo = document.getElementById('header-logo');
   const mobileLogo = document.getElementById('mobile-logo');
   const footerLogo = document.getElementById('footer-logo');
@@ -308,13 +310,18 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedLang = localStorage.getItem('ntx_lang') || 'en';
   setLanguage(savedLang);
 
+  function handleLangToggle() {
+    const currentLang = localStorage.getItem('ntx_lang') || 'en';
+    const newLang = currentLang === 'en' ? 'vi' : 'en';
+    setLanguage(newLang);
+    localStorage.setItem('ntx_lang', newLang);
+  }
+
   if (langToggleBtn) {
-    langToggleBtn.addEventListener('click', () => {
-      const currentLang = localStorage.getItem('ntx_lang') || 'en';
-      const newLang = currentLang === 'en' ? 'vi' : 'en';
-      setLanguage(newLang);
-      localStorage.setItem('ntx_lang', newLang);
-    });
+    langToggleBtn.addEventListener('click', handleLangToggle);
+  }
+  if (mobileLangToggleBtn) {
+    mobileLangToggleBtn.addEventListener('click', handleLangToggle);
   }
 
   function setLanguage(lang) {
@@ -329,15 +336,15 @@ document.addEventListener('DOMContentLoaded', () => {
       }
     });
 
-    // Update active visual status in stack switcher
-    const enText = document.querySelector('.lang-en');
-    const viText = document.querySelector('.lang-vi');
+    // Update active visual status in stack switcher (both desktop and mobile)
+    const enTexts = document.querySelectorAll('.lang-en');
+    const viTexts = document.querySelectorAll('.lang-vi');
     if (lang === 'en') {
-      if (enText) enText.classList.add('active');
-      if (viText) viText.classList.remove('active');
+      enTexts.forEach(el => el.classList.add('active'));
+      viTexts.forEach(el => el.classList.remove('active'));
     } else {
-      if (enText) enText.classList.remove('active');
-      if (viText) viText.classList.add('active');
+      enTexts.forEach(el => el.classList.remove('active'));
+      viTexts.forEach(el => el.classList.add('active'));
     }
   }
 
@@ -347,12 +354,19 @@ document.addEventListener('DOMContentLoaded', () => {
   const savedTheme = localStorage.getItem('ntx_theme') || 'light';
   applyTheme(savedTheme);
 
-  themeToggleBtn.addEventListener('click', () => {
+  function handleThemeToggle() {
     const currentTheme = document.body.classList.contains('dark-theme') ? 'dark' : 'light';
     const newTheme = currentTheme === 'light' ? 'dark' : 'light';
     applyTheme(newTheme);
     localStorage.setItem('ntx_theme', newTheme);
-  });
+  }
+
+  if (themeToggleBtn) {
+    themeToggleBtn.addEventListener('click', handleThemeToggle);
+  }
+  if (mobileThemeToggleBtn) {
+    mobileThemeToggleBtn.addEventListener('click', handleThemeToggle);
+  }
 
   function applyTheme(theme) {
     if (theme === 'dark') {

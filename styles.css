@@ -414,6 +414,23 @@ body.dark-theme .moon-icon { display: block; }
   color: var(--accent-blue);
 }
 
+.mobile-drawer-actions {
+  margin-top: auto;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border-light);
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.mobile-drawer-actions .lang-toggle-btn,
+.mobile-drawer-actions .theme-toggle-btn {
+  display: flex;
+  background: var(--bg-primary);
+  border: 1px solid var(--border-color);
+}
+
 /* 4. HERO SECTION */
 .hero-section {
   position: relative;
@@ -1106,11 +1123,34 @@ section {
 }
 
 /* 13. RESPONSIVE MEDIA QUERIES */
+@media (max-width: 1200px) {
+  .header-inner {
+    padding: 0 1rem;
+  }
+  .nav-group {
+    gap: 1rem;
+  }
+  .nav-link {
+    font-size: 0.95rem;
+    letter-spacing: 0.08em;
+  }
+  .theme-toggle-btn,
+  .lang-toggle-btn {
+    padding: 4px 8px;
+  }
+}
+
 @media (max-width: 1024px) {
   .hero-title { font-size: 2.8rem; }
   .metrics-grid { grid-template-columns: repeat(2, 1fr); }
   .about-grid { grid-template-columns: repeat(2, 1fr); }
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
+  .solutions-grid {
+    grid-template-columns: 1fr;
+  }
+  .solution-card.full-width {
+    grid-column: span 1;
+  }
 }
 
 @media (max-width: 768px) {
