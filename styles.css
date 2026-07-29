@@ -135,6 +135,38 @@ button {
   z-index: 5;
 }
 
+@media (min-width: 1025px) {
+  .nav-group {
+    flex: 1;
+  }
+  .nav-group.nav-left {
+    justify-content: flex-end;
+  }
+  .nav-group.nav-right {
+    justify-content: flex-start;
+  }
+}
+
+.header-center-spacer {
+  display: block;
+  width: 360px;
+  flex-shrink: 0;
+}
+
+@media (max-width: 1024px) {
+  .header-center-spacer {
+    display: none;
+  }
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Keep language and theme toggles very close */
+  z-index: 10;
+  margin-left: 2.5rem; /* Keep them far from CAREERS */
+}
+
 .nav-link {
   font-family: var(--font-header);
   font-size: 1.05rem;
@@ -145,6 +177,7 @@ button {
   position: relative;
   padding: 0.5rem 0;
   transition: color var(--transition-fast);
+  white-space: nowrap;
 }
 
 .nav-link:hover,
@@ -228,7 +261,7 @@ button {
   flex: 1;
   height: 1.5px;
   background-color: var(--notch-line-color);
-  margin-top: 1.5px;
+  margin-top: 1.25px; /* Align perfectly with SVG M 0,2 (Y=2 center) */
   transition: background-color var(--transition-normal);
 }
 
@@ -1135,15 +1168,34 @@ section {
     padding: 0 1rem;
   }
   .nav-group {
-    gap: 1rem;
+    gap: 0.8rem;
   }
   .nav-link {
-    font-size: 0.95rem;
-    letter-spacing: 0.08em;
+    font-size: 0.9rem;
+    letter-spacing: 0.06em;
   }
-  .theme-toggle-btn,
+  .header-center-spacer {
+    width: 180px;
+  }
+  .header-actions {
+    gap: 0.6rem;
+  }
+  .theme-toggle-btn {
+    width: 32px;
+    height: 32px;
+  }
   .lang-toggle-btn {
-    padding: 4px 8px;
+    height: 32px;
+    padding: 0 8px;
+    gap: 4px;
+  }
+  .lang-toggle-btn svg,
+  .theme-toggle-btn svg {
+    width: 15px;
+    height: 15px;
+  }
+  .lang-text-stack {
+    font-size: 7px;
   }
 }
 
@@ -1154,6 +1206,11 @@ section {
   
   .header-notch-line-wrapper {
     display: none;
+  }
+
+  .header-actions {
+    margin-left: 0;
+    gap: 1rem;
   }
 
   .site-header {

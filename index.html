@@ -24,6 +24,8 @@
         <a href="#projects" class="nav-link" data-i18n="nav_projects">PROJECTS</a>
       </nav>
 
+      <div class="header-center-spacer"></div>
+
       <div class="notch-center-container">
         <div class="notch-frame">
           <a href="#home" class="notch-logo-link" title="NTX Dynamics">
@@ -36,7 +38,10 @@
         <a href="profile.html" class="nav-link" data-i18n="nav_profile">PROFILE</a>
         <a href="#contacts" class="nav-link" data-i18n="nav_contacts">CONTACTS</a>
         <a href="#careers" class="nav-link" data-i18n="nav_careers">CAREERS</a>
-        
+      </nav>
+
+      <!-- HEADER ACTIONS (LANG, THEME, MOBILE MENU) -->
+      <div class="header-actions">
         <!-- LANGUAGE SWITCHER -->
         <button id="lang-toggle" class="lang-toggle-btn" title="Switch Language / Chọn ngôn ngữ">
           <svg class="globe-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -50,14 +55,16 @@
           </div>
         </button>
 
+        <!-- THEME TOGGLE -->
         <button id="theme-toggle" class="theme-toggle-btn" title="Toggle light/dark mode">
           <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
           <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
         </button>
-      </nav>
-      <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Navigation Menu">
-        <span></span><span></span><span></span>
-      </button>
+
+        <button id="mobile-menu-btn" class="mobile-menu-btn" aria-label="Open Navigation Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
     </div>
 
     <!-- HEADER NOTCH BORDER LINE (45° SLOPES, ROUNDED CORNERS, FADED EDGES) -->
@@ -88,26 +95,7 @@
       <li><a href="#careers" class="mobile-link" data-i18n="nav_careers">CAREERS</a></li>
     </ul>
     
-    <div class="mobile-drawer-actions">
-      <!-- MOBILE LANGUAGE SWITCHER -->
-      <button id="mobile-lang-toggle" class="lang-toggle-btn" title="Switch Language / Chọn ngôn ngữ">
-        <svg class="globe-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <circle cx="12" cy="12" r="10"></circle>
-          <line x1="2" y1="12" x2="22" y2="12"></line>
-          <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
-        </svg>
-        <div class="lang-text-stack">
-          <span class="lang-en active">EN</span>
-          <span class="lang-vi">VI</span>
-        </div>
-      </button>
 
-      <!-- MOBILE THEME TOGGLE -->
-      <button id="mobile-theme-toggle" class="theme-toggle-btn" title="Toggle light/dark mode">
-        <svg class="sun-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg>
-        <svg class="moon-icon" viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
-      </button>
-    </div>
   </div>
 
   <!-- MAIN CONTENT -->
