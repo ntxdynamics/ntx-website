@@ -323,6 +323,9 @@ body.dark-theme .moon-icon { display: block; }
   color: var(--text-primary);
   transition: all var(--transition-fast);
   height: 38px;
+  overflow: hidden; /* Fix Safari iOS border-radius background bleed */
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 .lang-toggle-btn:hover {
@@ -756,6 +759,7 @@ section {
   font-size: 1.6rem;
   font-weight: 700;
   margin-bottom: 1rem;
+  padding-right: 2.5rem; /* Prevent overlap with the absolute positioned .solution-badge */
 }
 
 .solution-card p {
@@ -1274,5 +1278,10 @@ section {
   .job-card {
     flex-direction: column;
     align-items: flex-start;
+  }
+
+  .job-meta {
+    flex-direction: column;
+    gap: 0.5rem;
   }
 }
